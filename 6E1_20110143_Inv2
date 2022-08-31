@@ -1,0 +1,41 @@
+pares = {2,4,6,8,10,12,14}
+impares = {1,3,5,7,9,11,13}
+mezclado = set()
+
+print(pares)
+print(impares)
+print(mezclado)
+
+mezclado = impares|pares
+
+print(mezclado)
+
+x = mezclado & pares
+print(x)
+
+y = {2,3,5,7}
+z = impares - y 
+print(z)
+
+v = y ^ pares
+print(v)
+
+if pares == mezclado:
+    print('IGUALDAD')
+else:
+        print('NO HAY IGUALDAD')
+
+if impares != mezclado:
+    print('DIFERENTE DE MEZCLADOS')
+else:
+        print('AMBOS CONJUNTOS SON IGUALES') 
+
+if pares > mezclado:
+    print('PARES ES UN SUPERCONJUNTO DE MEZCLADO')
+if pares < mezclado:
+    print('PARES ES UN SUBCONJUNTO DE MEZCLADO')
+
+if impares <= mezclado:
+    print('IMPARES ES IGUAL O UN SUBCONJUNTO DE MEZCLADO')
+else:
+   print('IMPARES ES IGUAL O UN SUPERCONJUNTO DE MEZCLADO') 
